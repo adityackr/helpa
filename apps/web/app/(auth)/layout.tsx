@@ -1,9 +1,8 @@
+import { AuthLayout } from '@/modules/auth/ui/layouts/auth-layout';
 import { ReactNode } from 'react';
 
-const AuthLayout = ({ children }: { children: ReactNode }) => {
-	return (
-		<div className="flex items-center justify-center min-h-svh">{children}</div>
-	);
+const Layout = ({ children }: { children: ReactNode }) => {
+	return <AuthLayout>{children}</AuthLayout>;
 };
 
-export default AuthLayout;
+export default Layout;
