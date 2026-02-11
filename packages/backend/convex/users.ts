@@ -23,6 +23,8 @@ export const add = mutation({
 			throw new Error('No org id found');
 		}
 
+		throw new Error('Tracking Test');
+
 		const userId = await ctx.db.insert('users', { name: 'Aditya' });
 		return userId;
 	},
